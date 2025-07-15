@@ -3,6 +3,7 @@
     - How? What does this mean?
 - incorporate some rmp/reddit/general web analyzing to recommend professors for classes
     - use ai wrapper **search up what would be good (later addition)**
+    - how will you ensure that web analysis is accurate/non-biased/pulls from reputable sources?
 - implement user preference system for scheduling constraints (morning/afternoon preference, days off, etc.)
 - possibly recommend a schedule based on classes provided/gen-ed needed
 - isolate process to a single website, and make it user friendly
