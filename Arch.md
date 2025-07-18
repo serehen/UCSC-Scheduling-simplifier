@@ -1,4 +1,4 @@
-## Goal:
+# Goal:
 - Facilitate scheduling
     - How? What does this mean?
 - incorporate some rmp/reddit/general web analyzing to recommend professors for classes
@@ -12,15 +12,15 @@
 - (hopefully) integrate shopping cart system? not sure if possible, but would at least facilitate schedule-shaping process
 - AI chatbot to recommend classes/schedule based on transcript/required or taken classes
 
-## Front End Components:
-# Log in/Sign up
+# Front End Components:
+## Log in/Sign up
 - ~~ONLY NECESSARY IF INTEGRATABLE WITH TANGIBLE SCHEDULE IN SOME WAY OR TRANSCRIPT~~
 - prompt user to log in, use duo if possible
 - store user data in database
 - check for a unique username input
 - ~~FIGURE OUT WHAT TO USE~~ 
 
-# UI/Features
+## UI/Features
 - display all courses on UCSC Catalogue, separated into own sections 
 - possibly group some together if amount of classes is small and are related
 - when viewing a class display:
@@ -36,14 +36,14 @@
 - allow searching/filtering through one or multiple filters
     - rmp rating, ge-credit, professor, etc
 
-# Use JS/TS
+## Use JS/TS
 - runs on all browsers
 - widely used
 - various frameworks for simplicity
 
-## Frontend Frameworks
+# Frontend Frameworks
 - **Final decision below**
-# React
+## React
 - **Pros**
     - popular, high demand
     - large library suppport
@@ -54,7 +54,7 @@
     - more setup
     - large app size
 
-# Vue
+## Vue
 - **Pros**
     - simplest to begin
     - rapid deployment
@@ -62,7 +62,7 @@
     - simplicity brings poor depth
     - poor felxibility
 
-# Svelte
+## Svelte
 - **Pros**
     - simplest code
     - better for solo work and full control
@@ -70,8 +70,8 @@
     - poor for bigger or dynamic apps
     - poor server rendering
 
-## Backend Components:
-# Course fetching:
+# Backend Components:
+## Course fetching:
 - ~~fetch courses based on user input (similar to already available class search)~~
 - ~~scrape website to grab available options like department/major~~
 - set up database to hold all data in a centralized location
@@ -79,14 +79,14 @@
     - only need to pull once a day to update
         - consider more frequent pulls for close to real-time status updates when enrollment happens(30 min pulls if possible to align with scheduling)
 
-# Scheduling Logic:
+## Scheduling Logic:
 - needs to handle conflicts, user-input conditions/limitations
 - for saved schedules, handle notification for when class fills
 - check if scheduling a class with no occupancy, or wait-listable
 - if sufficient information provided, check if user meets pre-requisites
     - else notify user of pre-requisites before adding
 
-# User Handling/Authentication:
+## User Handling/Authentication:
 - verify user-input information
 - pull info from front-end
 - encrypt some information
@@ -97,8 +97,8 @@
 - setup device/user recognition to simplify logins
 - ~~need to research and decide on authentication processes/std security stuff~~
 
-## Backend framework:
-# Node.js/Express
+# Backend framework:
+## Node.js/Express
 - **Pros**
     - complements React, Supabase
     - popular
@@ -110,7 +110,7 @@
     - requires server
     - more setup
 
-# Next.js
+## Next.js
 - **Pros**
     - better for smaller apps
     - integration for React and Supabase
@@ -120,7 +120,7 @@
     - no native websockets
     - can fall behind with more complex projects
 
-# Flask
+## Flask
 - **Pros**
     - python
     - lightweight
@@ -130,7 +130,7 @@
     - separate frontend
     - no direct compatability with DB/FE
 
-## Information Storage
+# Information Storage
 - need to store:
     - individual user information (login info)
     - user's created schedules
@@ -138,7 +138,7 @@
 - requires database, seems to be
 - **Final decision below**
 
-# PostgreSQL
+## PostgreSQL
 - **Pros**
     - JOINS for simplifying  and connecting related data
     - applicable rules that enforce data validity
@@ -149,7 +149,7 @@
     - requires backend manual backend setup
     - poor random data or rapid high volume data
 
-# Firebase
+## Firebase
 - **Pros**
     - higher scalability
     - handles authorization innately
@@ -161,7 +161,7 @@
     - complex, relational data
     - large writes to DB
 
-# MongoDB
+## MongoDB
 - **Pros**
     - Rapid MVP/prototype deployment
     - native nested data support
@@ -170,19 +170,19 @@
     - poor complexity
     - requires own back-end
 
-## Tech Stack:
-# React:
+# Tech Stack:
+## React:
 - Most value in learning, used in industry
 - Large library/tools and support base
 - Compatability with SupaBase
 
-# Next.js:
+## Next.js:
 - Great compatability with React and Supabase
 - Same language as react for more simplicity
 - Simple integration for OpenAI for later chatbot integration
 - Logic 
 
-# SupaBase:
+## SupaBase:
 - PostgreSQL based, includes own authentication system and login heavy simplification
 - Smaller end of scalability, but realistically sufficient
 - Simpler user experience 
