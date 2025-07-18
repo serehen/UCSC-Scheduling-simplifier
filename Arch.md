@@ -1,6 +1,9 @@
 # Goal:
 - Facilitate scheduling
     - How? What does this mean?
+- Provide least possible friction as possible for user
+    - avoid unecessary menus, simplify wherever possible, etc
+    - essentially maximize efficiency
 - incorporate some rmp/reddit/general web analyzing to recommend professors for classes
     - use ai wrapper **search up what would be good (later addition)**
 - implement user preference system for scheduling constraints (morning/afternoon preference, days off, etc.)
@@ -11,6 +14,26 @@
     - integrate slugtistics for grade averages
 - (hopefully) integrate shopping cart system? not sure if possible, but would at least facilitate schedule-shaping process
 - AI chatbot to recommend classes/schedule based on transcript/required or taken classes
+
+# To Do:
+- **General List of things to do, further know what to do when I start working immediately**
+- Look into SSO
+- Look at what backend stuff Supabase has to offer
+    - mostly regarding its authorization and sign in tools
+    - whether its worth using over SSO or not
+        - probably not, figure SSO is realistically more user friendly especially if allows for google login but will decide later
+- Finish sketch for website outline
+    - ~70% done with visualization sketch
+- Decide on what to start on first, likely frontend
+- Look at some other websites for inspiration regarding further design and research
+
+# Thoughts:
+- Later, but need to research how to restrict what a chatbot could pull from
+- Want to integrate some way to look at/for GEs in other CCCs
+    - Not sure how feasable, would need to pull from every CCC with publically available course catalogue, alot of data
+    - Would extremely facilitate arduous process
+    - Also requires scraping of Assist with specific requests checking at each CCC
+- Start with basic MVP then build on goal of efficiency and user-friendliness
 
 # Front End Components:
 ## Log in/Sign up
@@ -43,7 +66,7 @@
 
 # Frontend Frameworks
 - **Final decision below**
-## React
+## React/Vite
 - **Pros**
     - popular, high demand
     - large library suppport
@@ -171,7 +194,7 @@
     - requires own back-end
 
 # Tech Stack:
-## React:
+## React/Vite:
 - Most value in learning, used in industry
 - Large library/tools and support base
 - Compatability with SupaBase
