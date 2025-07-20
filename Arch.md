@@ -17,16 +17,18 @@
 
 # To Do:
 - **General List of things to do, further know what to do when I start working immediately**
-- Look into SSO
+- ~~Look into SSO~~
 - Look at what backend stuff Supabase has to offer
     - mostly regarding its authorization and sign in tools
-    - whether its worth using over SSO or not
-        - probably not, figure SSO is realistically more user friendly especially if allows for google login but will decide later
+    - ~~whether its worth using over SSO or not~~
+        - ~~probably not, figure SSO is realistically more user friendly especially if allows for google login but will decide later~~
 - Finish sketch for website outline
     - ~70% done with visualization sketch
 - Decide on what to start on first, likely frontend
 - Look at some other websites for inspiration regarding further design and research
-
+- Choice looks like either SSO or Google Auth
+    - SSO requires own setup, Supabase has integrated google authentication + tons of other options
+    
 # Thoughts:
 - Later, but need to research how to restrict what a chatbot could pull from
 - Want to integrate some way to look at/for GEs in other CCCs
@@ -67,29 +69,29 @@
 # Frontend Frameworks
 - **Final decision below**
 ## React/Vite
-- **Pros**
+- ### Pros
     - popular, high demand
     - large library suppport
     - compatability with supabase
     - scales well
     - large amount of resources
-- **Cons**
+- ### Cons
     - more setup
     - large app size
 
 ## Vue
-- **Pros**
+- ### Pros
     - simplest to begin
     - rapid deployment
-- **Cons**
+- ### Cons
     - simplicity brings poor depth
     - poor felxibility
 
 ## Svelte
-- **Pros**
+- ### Pros
     - simplest code
     - better for solo work and full control
-- **Cons**
+- ### Cons
     - poor for bigger or dynamic apps
     - poor server rendering
 
@@ -122,33 +124,33 @@
 
 # Backend framework:
 ## Node.js/Express
-- **Pros**
+- ### Pros
     - complements React, Supabase
     - popular
     - handles complex logic/apis better
     - better scalability
     - websockets for real-time updates
-- **Cons**
+- ### Cons
     - complex
     - requires server
     - more setup
 
 ## Next.js
-- **Pros**
+- ### Pros
     - better for smaller apps
     - integration for React and Supabase
     - more flexibility
     - simpler experience
-- **Cons**
+- ### Cons
     - no native websockets
     - can fall behind with more complex projects
 
 ## Flask
-- **Pros**
+- ### Pros
     - python
     - lightweight
     - heavy integration for AI/ML tools
-- **Cons**
+- ### Cons
     - manual setup
     - separate frontend
     - no direct compatability with DB/FE
@@ -162,52 +164,52 @@
 - **Final decision below**
 
 ## PostgreSQL
-- **Pros**
+- ### Pros
     - JOINS for simplifying  and connecting related data
     - applicable rules that enforce data validity
     - allows transactions - all or nothing actions for easier updates
     - covers complex filters and searches
     - clean data
-- **Cons**
+- ### Cons
     - requires backend manual backend setup
     - poor random data or rapid high volume data
 
 ## Firebase
-- **Pros**
+- ### Pros
     - higher scalability
     - handles authorization innately
     - handles analytics, push notifications, websocketing, some other stuff
         - mostly irrelevant unless want to move to mobile application
     - minimalizes back-end work
     - real-time sync
-- **Cons**
+- ### Cons
     - complex, relational data
     - large writes to DB
 
 ## MongoDB
-- **Pros**
+- ### Pros
     - Rapid MVP/prototype deployment
     - native nested data support
-- **Cons**
+- ### Cons
     - no JOIN
     - poor complexity
     - requires own back-end
 
 # Tech Stack:
-## React/Vite:
-- Most value in learning, used in industry
-- Large library/tools and support base
-- Compatability with SupaBase
-
 ## Next.js:
-- Great compatability with React and Supabase
-- Same language as react for more simplicity
-- Simple integration for OpenAI for later chatbot integration
-- Logic 
+- React based full-stack framework
+- Integrated support for TS
+- Great compatability with Supabase
+- Simple integration APIs, API routing
+    - allows ease of use for OpenAI API for later chatbot integration
+- Extensive list of documentation and guides to facilitate finding information
 
 ## SupaBase:
-- PostgreSQL based, includes own authentication system and login heavy simplification
+- PostgreSQL based, includes own authentication system and login through various platforms (Google, Github, Email. etc.)
 - Smaller end of scalability, but realistically sufficient
 - Simpler user experience 
 - Faster deployment
-- Front-end SDK, further simplicity
+
+## Tailwind CSS
+- Pre-defined classes to simplify UI Design
+- Allows styling directly with React, no need for subsidiary css styling 
