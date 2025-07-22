@@ -1,14 +1,14 @@
 ### Tech Stack for the UCSC Scheduling Simplifier
 
 #### Front-End
-- React with Vite
+- React with Next.js
 - Tailwind CSS for visuals and aesthetic
-- React Context for State Management
-- Recharts for Data Visualization
+- Next.js for full-stack simplicity
 
 ### Back-End
-- FastAPI for RMP and MyScheduler scraping
-- Redis for caching data
+- Next.js for API routing between Supabase for courses
+- Supabase for storing/pulling from database, authorization
 
 ### Hosting
 - Vercel
+
