@@ -28,6 +28,8 @@
 - Look at some other websites for inspiration regarding further design and research
 - Choice looks like either SSO or Google Auth
     - SSO requires own setup, Supabase has integrated google authentication + tons of other options
+- Write edge function to pull from UCSC straight to supabase
+
     
 # Thoughts:
 - Later, but need to research how to restrict what a chatbot could pull from
