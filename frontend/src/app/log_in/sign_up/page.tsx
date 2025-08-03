@@ -1,16 +1,16 @@
 import Link from "next/link";
-import { login } from "../actions";
+import { signup } from "../actions";
 
-// This is the main login page component
-// It contains a form for logging in and a link to sign up
-// The form submits to the login action defined in actions.tsx
-// The signup link redirects to the signup page
+// This is the main signup page component
+// It contains a form for signing up and a link to log in
+// The form submits to the signup action defined in actions.tsx
+// The login link redirects to the login page
 
-export default function LogIn() {
+export default function signUp() {
     return (
         <main className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-6">
             <h2 className="text-center text-2xl font-bold text-blue-600">
-                Log In
+                Sign Up
             </h2>
             <form className="mt-4  border-b-black rounded text-black">
                 <div className="mb-4">
@@ -40,21 +40,13 @@ export default function LogIn() {
                     />
                 </div>
                 <div className="flex isolate">
-                <button formAction={login} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">
-                    Log In
+                <button formAction={signup} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">
+                    Sign Up
                 </button>
                 <Link href="/" className="ml-auto px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
                     Return
                 </Link>
                 </div>
-                <p className="mt-4 text-center py-1">
-                    {"Don't have an account? "}
-                    <Link href="/log_in/sign_up">
-                        <label className="block text-blue-500 hover:underline cursor-pointer">
-                            Sign Up
-                        </label>
-                    </Link>
-                </p>
             </form>
         </main>
     );

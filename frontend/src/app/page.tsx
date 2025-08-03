@@ -7,7 +7,7 @@ export default function Home() {
         Welcome to the UCSC Scheduler
       </h1>
       <Link href="/log_in/main_login">
-        <button className="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+        <button className="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">
           Log In
         </button>
       </Link>
@@ -15,7 +15,7 @@ export default function Home() {
         or
       </p>
       <Link href="/scheduling/subjects">
-        <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+        <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">
           View Scheduling Options
         </button>
       </Link>

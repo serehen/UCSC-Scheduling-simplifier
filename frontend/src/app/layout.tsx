@@ -20,12 +20,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				    </footer>
                     <div className='absolute top-0 right-0 p-4'>
 				    <Link href="/">
-					    <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+					    <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">
 						    Home
 					    </button>
 				    </Link>
                     <Link href="/profile" className="ml-4">
-                        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">
                             Profile
                         </button>
                     </Link>
