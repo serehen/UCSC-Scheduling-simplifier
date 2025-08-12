@@ -19,8 +19,9 @@ git clone https://github.com/serehen/UCSC-Scheduling-simplifier
 ```
 npm install
 ```
+5. Rename **".env.public"** to **".env.local"**
 
-5. Run locally on supported browsers (Chrome, Edge, Firefox, etc)
+6. Run locally on supported browsers (Chrome, Edge, Firefox, etc)
 ```
 npm run dev
 ```
