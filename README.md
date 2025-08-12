@@ -13,12 +13,14 @@ I plan to work on this project over the course of Summer 2025, and will document
 git clone https://github.com/serehen/UCSC-Scheduling-simplifier
 ```
 
-3. Install dependencies (access repo first)
+3. cd into UCSC-Scheduling-simplifier/frontend
+
+4. Install dependencies (access repo first)
 ```
 npm install
 ```
 
-4. Run locally on device
+5. Run locally on supported browsers (Chrome, Edge, Firefox, etc)
 ```
 npm run dev
 ```
