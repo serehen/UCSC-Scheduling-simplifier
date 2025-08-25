@@ -19,7 +19,7 @@ git clone https://github.com/serehen/UCSC-Scheduling-simplifier
 ```
 npm install
 ```
-5. Rename **".env.public"** to **".env.local"**
+5. Ensure a `.env.local` file exists in the `frontend/` folder (this repository includes a committed example).
 
 6. Run locally on supported browsers (Chrome, Edge, Firefox, etc)
 ```
