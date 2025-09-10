@@ -2,6 +2,7 @@
 import React from 'react';
 import './globals.css'; // Ensure you have Tailwind CSS imported here
 import Link from 'next/link';
+import { createButton } from './components/buttons/page';
 
 export const metadata = {
   title: 'UCSC Scheduler',
@@ -18,16 +19,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				    <footer className="bg-gray-300 text-center">
 					    &copy; 2025 UCSC Scheduler
 				    </footer>
-                    <div className='absolute top-0 right-0 p-4'>
-				    <Link href="/">
-					    <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">
-						    Home
-					    </button>
+                    <div className='flex absolute top-0 right-0 p-4'>
+				    <Link href="/" className='mr-4'>
+                        {createButton("Home")}
 				    </Link>
-                    <Link href="/profile" className="ml-4">
-                        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">
-                            Profile
-                        </button>
+                    <Link href="/profile">
+                        {createButton("Profile")}
                     </Link>
                     </div>
 			</body>

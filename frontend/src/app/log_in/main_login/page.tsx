@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { login } from "../actions";
+import { createButton } from "@/app/components/buttons/page";
+import { returnButton } from "@/app/components/buttons/page";
 
 // This is the main login page component
 // It contains a form for logging in and a link to sign up
@@ -40,12 +42,10 @@ export default function LogIn() {
                     />
                 </div>
                 <div className="flex isolate">
-                <button formAction={login} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">
-                    Log In
+                <button formAction={login} >
+                    {createButton("Log In")}
                 </button>
-                <Link href="/" className="ml-auto px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                    Return
-                </Link>
+                {returnButton()}
                 </div>
                 <p className="mt-4 text-center py-1">
                     {"Don't have an account? "}
